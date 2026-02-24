@@ -3,7 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <title>Pope Francis</title>
-  <style></style>
+  <style> 
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #FDFCE2;
+    }
+    header > * {  /* Child selector for the header elements */
+      margin: 0;
+      padding: 5px;
+    }
+    header{
+      background-color: #E4F4FA;  /* Light blue background for header */
+    }
+    section h2 {
+      background-color: #B0C4E0;  /* Dark blue background for section headers */
+      color: white;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .right-aligned {  /* Class for right-aligned pope figure */
+      float: right;
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    ul {
+      list-style-type: circle;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,6 +39,9 @@
       Roman Province, Sovereign of the State of Vatican City, Servant of the Servants of God.</h3>
   </header>
   <article>
+    <figure class="right-aligned">
+      <img src="Images/pope.png" alt="Pope Francis waving to a crowd" width="410" height="auto">
+    </figure>
     <aside>
       <section>
         <h2>Quotes:</h2>
@@ -20,7 +49,7 @@
           <li>"We all have the duty to do good."</li>
           <li>"Money must serve, not rule."</li>
           <li>"I am a sinner."</li>
-          <li>"Working for a just distribution of wealth is not mere philanthropy. It isa moral obligation."</li>
+          <li>"Working for a just distribution of wealth is not mere philanthropy. It is a moral obligation."</li>
         </ul>
       </section>
       <section>
@@ -28,14 +57,14 @@
         <ul>
           <li>Worked as a bar bouncer to pay for college.</li>
           <li>Washes feet of incarcerated women.</li>
+          <li>Lives in a small apartment behind a gas station.</li>
           <li>Orders Domino's take-out every Thursday.</li>
         </ul>
       </section>
     </aside>
-    <figure>
-      <img src="Images/pope.png" alt="Pope Francis waving to a crowd">
-    </figure>
   </article>
-
+  <footer>
+    <p>Report problems to the webmaster at <em>benedictxvi@vatican.va</em></p>
+  </footer>
 </body>
 </html>
