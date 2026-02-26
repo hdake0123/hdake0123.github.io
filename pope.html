@@ -21,10 +21,15 @@
       padding-top: 2px;
       padding-bottom: 2px;
     }
-    .right-aligned {  /* Class for right-aligned pope figure */
+    article h2 {
+      background-color: #B0C4E0;  /* Dark blue background for article headers */
+      color: white;
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .right-aligned {  /* Class for right-aligned pope <figure> */
       float: right;
-      margin-left: 20px;
-      margin-bottom: 10px;
+      padding-top: 0px; /* This is to nudge the image down so it matches the project requirements. */
     }
     ul {
       list-style-type: circle;
@@ -38,31 +43,29 @@
       Pontiff of the Universal Church, Primate of Italy, Archbishop and Metropolitan of the
       Roman Province, Sovereign of the State of Vatican City, Servant of the Servants of God.</h3>
   </header>
-  <article>
-    <figure class="right-aligned">
-      <img src="Images/pope.png" alt="Pope Francis waving to a crowd" width="410" height="auto">
-    </figure>
-    <aside>
-      <section>
-        <h2>Quotes:</h2>
-        <ul>
-          <li>"We all have the duty to do good."</li>
-          <li>"Money must serve, not rule."</li>
-          <li>"I am a sinner."</li>
-          <li>"Working for a just distribution of wealth is not mere philanthropy. It is a moral obligation."</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Interesting facts:</h2>
-        <ul>
-          <li>Worked as a bar bouncer to pay for college.</li>
-          <li>Washes feet of incarcerated women.</li>
-          <li>Lives in a small apartment behind a gas station.</li>
-          <li>Orders Domino's take-out every Thursday.</li>
-        </ul>
-      </section>
-    </aside>
-  </article>
+  <main>
+    <section>
+      <figure class="right-aligned">    <!-- I put the <figure> here so it would display inside the header -->
+        <img src="Images/pope.png" alt="Pope Francis waving to a crowd" width="410" height="auto">
+      </figure>
+      <h2>Quotes:</h2>
+      <ul>
+        <li>"We all have the duty to do good."</li>
+        <li>"Money must serve, not rule."</li>
+        <li>"I am a sinner."</li>
+        <li>"Working for a just distribution of wealth is not mere philanthropy. It is a moral obligation."</li>
+      </ul>
+    </section>
+    <article>   <!-- I used an article element here to meet the project requirement -->
+      <h2>Interesting facts:</h2>
+      <ul>
+        <li>Worked as a bar bouncer to pay for college.</li>
+        <li>Washes feet of incarcerated women.</li>
+        <li>Lives in a small apartment behind a gas station.</li>
+        <li>Orders Domino's take-out every Thursday.</li>
+      </ul>
+    </article>
+  </main>
   <footer>
     <p>Report problems to the webmaster at <em>benedictxvi@vatican.va</em></p>
   </footer>
